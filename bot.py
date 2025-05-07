@@ -3,6 +3,11 @@ from discord.ext import commands
 from aiohttp import web
 import asyncio
 import logging
+import os
+
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")  # or a direct string like "MTA..."
+bot.run(TOKEN)
+
 
 TOKEN = "MTM2OTQ5MDQ3MjIyMTAyMDMwMA.GnhXkG.6-385adQrXlIhkAAkBQQtv2seDaPtIGUvjEqM0"
 GUILD_ID = 1110839856902459392  # e.g. 123456789012345678
